@@ -64,7 +64,7 @@ cmd(
 
       // 5) Audio download helper
       const downloadAudio = async (videoUrl, quality = "mp3") => {
-        const apiUrl = `https://p.oceansaver.in/ajax/download.php?format=${quality}&url=${encodeURIComponent(
+        const apiUrl = `https://malvin-api.vercel.app/download/youtube?url=${encodeURIComponent(
           videoUrl
         )}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`;
 
