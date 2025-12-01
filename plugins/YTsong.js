@@ -64,9 +64,7 @@ cmd(
 
       // 5) Audio download helper
       const downloadAudio = async (videoUrl, quality = "mp3") => {
-        const apiUrl = `https://malvin-api.vercel.app/download/youtube?url=${encodeURIComponent(
-          videoUrl
-        )}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`;
+        const apiUrl = `https://apiskeith.vercel.app/download/audio?url=${encodeURIComponent(song.url)}`;
 
         const res = await axios.get(apiUrl);
         if (!res.data.success) throw new Error("Failed to fetch audio details.");
